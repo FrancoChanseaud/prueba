@@ -1,0 +1,172 @@
+$color-fuente:rgba(210,210,210,0.8);
+
+a{
+    text-decoration: none;
+}
+.bg-fondo-principal{
+    background-image: url(../img/fondo.jpg);
+    background-position:center;
+    background-size:cover;
+    height: 100vh;
+    min-height: 60rem;
+    @media screen and (max-width:768px) {
+    height: 80vh;
+    min-height: 34.7rem;
+    }
+    
+    .header-inicio-home{
+        height: 8rem;
+        @media screen and (max-width:768px) {
+            height: 6rem;
+            background-color: #2d2d2d;
+            position: sticky;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .barra-navegacion-home{
+            display: flex;
+            justify-content: space-between;
+            max-width: 992px;
+            margin: 0 auto;
+
+            .toggle{
+                color: #D2D2D2;
+                background: none;
+                border: none;
+                font-size: 3rem;
+                padding: 0 2rem;
+                line-height: 5.5rem;
+                display: none;
+                @media screen and (max-width: 768px) {
+                    display: block
+                }
+            }
+
+            .logo{
+                font-size: 5rem;
+                padding: 0 4rem;
+                line-height: 8rem;
+                font-family: 'Work Sans', sans-serif;
+                color: #D2D2D2;
+                @media screen and (max-width:768px) {
+                    font-size: 3rem;
+                    padding: 0 2rem;
+                    line-height: 5.5rem;
+                }
+            }
+            .menu-navegacion{
+                display: flex;
+                margin-right: 4rem;
+                list-style: none;
+                @media screen and (max-width:768px) {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-right: 2rem;
+                    background-color: #222222;
+                    position: fixed;
+                    left: 0;
+                    top: 6rem;
+                    width: 100%;
+                    padding: 2rem 0;
+                    height: calc(100% - 6rem);
+                    overflow-y: auto;
+                    left: 100%;
+                    transition: left 0.3s;
+                }
+                
+
+                .item-menu-navegacion{
+                    font-size: 3rem;
+                    margin: 0 1rem;
+                    line-height: 8rem;
+                    width: max-content;
+                    @media screen and (max-width: 768px) {
+                    line-height: 7rem;
+                    }
+
+                    .link-menu-navegacion{
+                        color: #D2D2D2;
+                        font-family:'Work Sans', sans-serif;
+
+                        &:hover{
+                            color: white;
+                            transition: 0.5s;
+                            @media screen and (max-width: 768px) {
+                                color: none;
+                                background-color: #d2d2d260;
+                                padding: 1rem;
+                                border-radius: 0.5rem;
+                                transition: 0.3s;
+                                }
+                        }
+                    }
+                }
+            }
+            .visible{
+                left:0;
+            }
+        }
+
+    }
+    
+    .encabezado-principal-home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 2.3rem;
+        margin-top: 13rem;
+        font-family:'Work Sans', sans-serif;
+        color:$color-fuente;
+        @media screen and (max-width: 768px) {
+            line-height: 2rem;
+            }
+        h1{
+            margin-bottom: 1rem;
+            @media screen and (max-width: 768px) {
+                font-size: 2.5rem;
+                }
+        }
+        
+        p{ 
+            font-size: 2.5rem;
+            @media screen and (max-width: 768px) {
+                font-size: 1.5rem;
+                }
+        }
+    }
+}
+.fondo-footer{
+    background-color:#D2D2D2;
+    .encabezadofooter{
+        h2{
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 300;
+        font-size: 3.5rem;
+        margin-bottom: -1rem;
+        @media screen and (max-width: 768px) {
+            font-size: 2rem;
+            }
+        }
+    }
+    .redes-sociales-footer{
+        a{
+            text-decoration: none;
+            img{
+                transition:0.3s;
+                @media screen and (max-width: 768px) {
+                    height: 4rem;
+                    padding: 0 2rem;;
+                    }
+                &:hover{
+                    transform: scale(1.1);
+                    @media screen and (max-width: 768px) {
+                        transform: none;
+                        }
+                }
+            }
+        }
+    }
+}

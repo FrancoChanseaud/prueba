@@ -1,0 +1,74 @@
+.bg-expo{
+    background-image: url(../img/banner-6.jpg);
+    background-repeat: no-repeat;
+    background-position:0% 50%;
+    background-size: cover;
+    width: auto;
+    height:15rem;
+
+    .titulo-colecciones{
+        line-height: 15rem;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 5rem;
+        color: #d2d2d2;
+        margin-top: 0;
+    }
+}
+.contenedor-expo{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+    max-width: 30%;
+    max-height: 30%;
+    @media screen and (max-width:1150px){
+    max-width:90%;
+    max-height: 90%;
+    margin-left: 0;
+    margin-right: 0;
+    }
+
+    img{
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    .texto-expo{
+        font-size: 2rem;
+        font-family: 'Work Sans', sans-serif;
+        background-color: #d2d2d2;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        margin-bottom:2rem;
+        
+        h2{
+            padding-top: 1rem;
+        }
+        p{
+            text-align: justify;
+            padding: 0 1rem;
+        }
+
+        .ver-expo{
+            a{
+                color: #000000;
+                font-size: 1.5rem;
+                background-color: #eeeeee73;
+                border: solid 0.1rem #2d2d2d8e;
+                padding: 0.5rem;
+                border-radius: 1rem;
+                &:hover{
+                    background-color: #d2d2d260;
+                }
+            }
+        }
+    }
+}
+.contender-mq-expo{
+    @media screen and (max-width:1150px){
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
